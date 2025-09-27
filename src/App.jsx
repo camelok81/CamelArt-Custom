@@ -39,13 +39,13 @@ export default function App() {
       {/* Навигация */}
       <div className="flex gap-2 mb-6">
         <button
-          className={\`px-3 py-1 rounded \${page === "home" ? "bg-orange-500" : "bg-gray-700"}\`}
+          className={\'px-3 py-1 rounded \${page === "home" ? "bg-orange-500" : "bg-gray-700"}\`}
           onClick={() => setPage("home")}
         >
           Home
         </button>
         <button
-          className={\`px-3 py-1 rounded \${page === "gallery" ? "bg-orange-500" : "bg-gray-700"}\`}
+          className={\'px-3 py-1 rounded \${page === "gallery" ? "bg-orange-500" : "bg-gray-700"}\`}
           onClick={() => setPage("gallery")}
         >
           {t.gallery}
@@ -57,7 +57,7 @@ export default function App() {
         {["pl", "ru", "en"].map((l) => (
           <button
             key={l}
-            className={\`px-3 py-1 rounded \${lang === l ? "bg-orange-500" : "bg-gray-700"}\`}
+            className={\'px-3 py-1 rounded \${lang === l ? "bg-orange-500" : "bg-gray-700"}\`}
             onClick={() => setLang(l)}
           >
             {l.toUpperCase()}
